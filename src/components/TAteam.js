@@ -6,7 +6,7 @@ const TA = () =>{
   const [show, setShow]=useState(false)
   return (
 
-    <div className='container-fliud'>
+    <div className='container'>
       <Header />
       <div className='card'>
         <div className='card-body'>
@@ -58,7 +58,7 @@ const TA = () =>{
                   <td>test</td>
                   <td>test</td>
                   <td>
-                    <button type='button' data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={()=>{setShow(true)}} className='btn btn-outline-success'>
+                    <button style={{width:"60px"}} type='button' data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={()=>{setShow(true)}} className='btn btn-outline-success btn-sm'>
                     <i class="bi bi-pencil-square"></i>  Edit
                     </button>
                   </td>
@@ -113,7 +113,10 @@ const TA = () =>{
                       <option value="Female">Female</option>
                     </select>
                   </div>
-
+                  <div className='col-md-4 pb-3'>
+                    <label>Resume</label>
+                    <input className='form-control' type='file'/>
+                  </div>
                   <div className='col-md-4 pb-3'>
                     <label>Position Applied for</label>
                     <input className='form-control' type='text' placeholder='Position Applied for' />

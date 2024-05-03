@@ -3,7 +3,8 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Signup from './components/Signup';
 import Signin from './components/Signin';
-import TA from './components/TA';
+import TAteam from './components/TAteam';
+import HRteam from './components/HRteam';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Signup />} />
       <Route path="/signin" element={<Signin />} />
-      <Route path="/ta" element={<TA />} />
+      <Route path="/ta" element={<TAteam />} />
+      <Route path="/hrteam" element={<HRteam />} />
     </Routes>
   );
 }
